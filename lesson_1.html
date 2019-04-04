@@ -35,8 +35,113 @@
     //ex 5
     var a=17, b=10, c= a-b, d=7, result = c+d;// yes i can and i know its not good loking but i can ise that for oop
     console.log("i dont know why i do that " + result );
-
     //----//
+    //ex6
+    var str ="hi its world?"
+    console.log(str);
+    //ex7
+    var str1="hello", str2="sudo";
+    console.log(str1+" "+ str2);
+    //ex8 
+    var str_name="its my name";
+    console.log("hi "+ str_name );
+    //ex9 
+    var age = "it s so sily i was write code on c++ 3 years and know i write that its my life????";
+    console.log("my age " + age);
+    //----//
+    //ex10
+    var your_name= prompt("you name");//raedline
+    console.log('your name' + your_name);
+    //ex11
+    var x2=prompt('x=');x2=x2*x2;
+    console.log("x^2= " + x2);
+    //----//
+    //ex12 here must be references to characters, 
+    //but i think will be better to can drawn in the console?
+    var k=14;
+    
+for(var j=6; j<10; ++j)
+{
+    str="";
+    for(var i=0; i<14; ++i)
+    {
+        if (i==j||i==6)//its work but if(i==6||i==j) dont work wtf
+            {
+                str=str+"X";
+            }
+        else
+            {
+                str=str+"-";
+            }
+    }       
+    console.log(str);
+}
+    str="";
+    for(var i=0; i<14; ++i)
+    {
+        if ( (i > 5 && i < 10) ||i==13 )
+            {
+                str=str+"x";
+            }
+        else
+            {
+                str=str+"-";
+            }
+    }       
+    console.log(str);
+    str="";
+    for(var i=0; i<14; ++i)
+    {
+        if ( i == 1 ||i==12 )
+            {
+                str=str+"x";
+            }
+        else
+            {
+                str=str+"-";
+            }
+    }       
+    console.log(str);
+    str="";
+    for(var i=0; i<14; ++i)
+    {
+        if ( i >1 && i<11 )
+            {
+                str=str+"x";
+            }
+        else
+            {
+                str=str+"-";
+            }
+    }       
+    console.log(str);
+    str="";
+    for(var i=0; i<14; ++i)
+    {
+        if ( (i >1 && i<4)||(i >8 && i<11) )
+            {
+                str=str+"x";
+            }
+        else
+            {
+                str=str+"-";
+            }
+    }       
+    console.log(str);
+    str="";
+    for(var i=0; i<14; ++i)
+    {
+        if ( i >3 && i<9 )
+            {
+                str=str+"x";
+            }
+        else
+            {
+                str=str+"-";
+            }
+    }       
+    console.log(str);
+    //ship end))0
     </script>
 </body>
 </html>
