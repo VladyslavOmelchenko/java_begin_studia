@@ -8,7 +8,46 @@
 </head>
 <body>
     <script>
-    
+    // math function 
+    var a=10, b=3;
+    console.log(b%a);
+    console.log(b/a);
+    //console.log(b\a); its dont work(
+    console.log(Math.pow(a,b));
+    console.log(Math.sqrt(b));//just c
+    console.log(Math.sqrt(379).toFixed(0));//its round to cell
+    console.log(Math.floor(Math.sqrt(379)));//less
+    console.log(Math.ceil(Math.sqrt(379)));//more
+    console.log(Math.max(4, 5,1,4,0, 9 , 94,4 ,4));//and min
+    // console.log((Math.random()));// its dont work
+    console.log(Math.floor(Math.random()*(100 - 1 + 1)+1));//its imposible
+    //i just can use that fun why they cant do its good
+    function RND(min, max){return Math.floor(Math.random()*(max-min+1))+min}
+    console.log(RND(1, 100));
+    console.log(Math.abs(b-a));
+    function ABS(num){if (num<0){return -num;} return num; }
+    console.log(ABS(a-b));
+    function Average(arr){var sum=0;for(var i=0; i<arr.length; i++){sum=+arr[i]}return sum/arr.length;}
+    console.log(Average([12,3,4,5,6,7,6]));
+    function factorial(num,i)
+    {
+        if(i!=null && num>1)
+        {
+            console.log(num);
+            num--;
+            i=i*num;
+            return factorial(num, i);
+        }
+        else if(num>1 && i==null)
+        {
+           return factorial(num, num);
+        }
+        else 
+        {
+            return i
+        }
+    }
+    console.log(factorial(120,));
     </script>
 </body>
 </html>
